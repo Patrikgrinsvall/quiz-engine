@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+
+    <div id="progress" class="w-full h-1/4 bg-gray-200 flex items-center justify-center">
+        <!-- Progress area for badges -->
+    </div>
+
+    <div id="main" class="w-full h-3/4 bg-white flex items-center justify-center">
+        <!-- Main game area -->
+    </div>
+
+    <div id="modal" class="modal flex">
+        <div class="modal-content">
+            <span id="badge-modal"></span>
+            <button id="modal-close" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Close</button>
+        </div>
+    </div>
+
+    <script src="2script2.js"></script>
+</body>
+</html>
